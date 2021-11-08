@@ -61,7 +61,7 @@ export default function Footer() {
                         <TextColumn>Facebook</TextColumn>
                     </DivTextWithIcon>
                     <DivTextWithIcon>
-                        <IconColumn src="./instagram.png" />
+                        <IconColumn src="./instagram.PNG" />
                         <TextColumn>Instagram</TextColumn>
                     </DivTextWithIcon>
                 </DivColumn>

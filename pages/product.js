@@ -70,7 +70,7 @@ export default function Product() {
             <Input />
             <ButtonCep>Ok</ButtonCep>
           </DivHor>
-          <ImagePayment src="./pagamento.png" />
+          <ImagePayment src="./pagamento.PNG" />
         </Details>
       </ContainerDetails>
       <DescriptionContainer>

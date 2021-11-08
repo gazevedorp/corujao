@@ -13,11 +13,11 @@ export default function Sections() {
     return (
         <Container>
             <CardLeft>
-                <CardLeftImage src="./linguica.png" />
+                <CardLeftImage src="./linguica.PNG" />
             </CardLeft>
             <CardRight>
-                <CardRightImage src="./temperos.png" />
-                <CardRightImage src="./hamburguerias.png" />
+                <CardRightImage src="./temperos.PNG" />
+                <CardRightImage src="./hamburguerias.PNG" />
             </CardRight>
         </Container>
     )
