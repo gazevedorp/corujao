@@ -31,7 +31,7 @@ export default function Header() {
           <option value="Legumes" label="Legumes" />
           <option value="Verduras" label="Verduras" />
         </CategoriesSelect>
-        <CartImage src="/cart.png" />
+        <CartImage onClick={() => Router.push("/cart")} src="/cart.png" />
         <DivLogin>
           <DivLoginImage src="/user.png" />
           <DivLoginTitle>Entrar / Cadastre-se</DivLoginTitle>

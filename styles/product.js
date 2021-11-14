@@ -72,10 +72,10 @@ export const TecnicalDescription = styled.p`
 `;
 
 export const ContainerDetails = styled.div`
-   padding: 0px 20px 20px 20px;
+   padding: 0px 20px 20px 30px;
    display: flex;
    flex-direction: row;
-   justify-content: flex-start;
+   justify-content: center;
 `;
 
 export const ContainerImages = styled.div`
@@ -102,7 +102,7 @@ export const Image = styled.img`
 export const Details = styled.div`
    display: flex;
    flex-direction: column;
-   padding: 0px 10px 0px 30px;
+   padding: 0px 10px 0px 20px;
 `;
 
 export const Stars = styled.img`
