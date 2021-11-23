@@ -8,6 +8,10 @@ export const Container = styled.div`
     justify-content: center;
     padding: 20px;
     z-index: 10;
+
+    @media(max-width: 600px) {
+        display: ${props => !props.show && "none"};
+    }
 `;
 
 export const Title = styled.p`
@@ -38,8 +42,12 @@ export const LabelCheck = styled.p`
    padding: 5px 0px 5px 0px;
 
    input {
-   margin-right: 10px;
-}
+        margin-right: 10px;
+    }
+
+    @media(max-width: 600px) {
+        padding: 0px;
+    }
 `
 
 export const TextCheck = styled.input`

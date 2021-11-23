@@ -10,10 +10,23 @@ export const Container = styled.div`
     z-index: 10;
 
     background-color: #FF862D;
+
+    @media(max-width: 800px) {
+        justify-content: space-around;
+    }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const Image = styled.img`
     width: 300px;
+
+    
+    @media(max-width: 800px) {
+        width: 225px;
+    }
 `
 
 export const DivInput = styled.div`
@@ -21,6 +34,11 @@ export const DivInput = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 export const Input = styled.input`
@@ -33,6 +51,15 @@ export const Input = styled.input`
     outline: none;
 
     background-color: #ffffff;
+
+    @media(max-width: 800px) {
+        width: 200px;
+        margin: 0px 10px 0px 10px;
+    }
+    @media(max-width: 600px) {
+        width: 300px;
+        margin: 20px 0px 20px 0px;
+    }
 `
 
 export const Button = styled.button`

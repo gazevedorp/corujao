@@ -36,6 +36,10 @@ export const DivInput = styled.div`
     justify-content:  space-between;
     align-items: center;
     padding: 30px 0px 30px 0px;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const Input = styled.input`
@@ -45,6 +49,16 @@ export const Input = styled.input`
     background-color: transparent;
     border-radius: 20px;
     width: 60%;
+
+    
+    @media(max-width: 800px) {
+        width: 200px;
+        margin: 0px 10px 0px 10px;
+    }
+    @media(max-width: 600px) {
+        width: 300px;
+        margin: 20px 0px 20px 0px;
+    }
 `;
 
 export const Button = styled.button`
@@ -56,6 +70,10 @@ export const Button = styled.button`
     border-radius: 20px;
     width: 30%;
     cursor: pointer;
+
+    @media(max-width: 600px) {
+        width: 200px;
+    }
 `;
 
 export const Description = styled.p`

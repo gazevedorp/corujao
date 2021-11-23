@@ -38,6 +38,10 @@ export const Title = styled.p`
     font-weight: bolder;
 
     color: #ffffff;
+
+    @media(max-width: 600px) {
+        font-size: 24px;
+    }
 `;
 
 export const ContainerOrder = styled.div`
@@ -47,6 +51,11 @@ export const ContainerOrder = styled.div`
     justify-content: right;
     align-items: center;
     border-radius: 30px;
+    
+    @media(max-width: 600px) {
+        justify-content: center;
+        flex-direction: column;
+    }
 `;
 
 export const ProductsContent = styled.div`
@@ -55,14 +64,26 @@ export const ProductsContent = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const FilterContainer = styled.div`
     width: 25%;
+
+    @media(max-width: 600px) {
+        width: 100%;
+    }
 `;
 
 export const ProductsContainer = styled.div`
     width: 75%;
+    
+    @media(max-width: 600px) {
+        width: 100%;
+    }
 `;
 
 export const FilterOrder = styled.select`
@@ -96,3 +117,18 @@ export const ButtonPagination = styled.button`
     background-color: #2F7420;
     color: #ffffff;
 `;
+
+export const ButtonFilter = styled.button`
+    cursor: pointer;
+    color: #FF6B00;
+    text-decoration: underline;
+    background-color: #ffffff;
+    border: 0px;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+
+    @media(min-width: 600px) {
+        display: none;
+    }
+`

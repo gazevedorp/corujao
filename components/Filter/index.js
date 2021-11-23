@@ -9,10 +9,10 @@ import {
     TextCheck
 } from '../../styles/components/filter'
 
-export default function Filter() {
+export default function Filter( props ) {
 
     return (
-        <Container>
+        <Container show={props.show}>
             <Title>Mais Filtros</Title>
             <ContainerMore>
                 <TextMore>Fornecedores</TextMore>

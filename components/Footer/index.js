@@ -30,7 +30,7 @@ export default function Footer() {
                     <Text>Envio</Text>
                     <Text>Pagamento</Text>
                     <Text>Tempo de Garantia</Text>
-                    <Text>Contaato</Text>
+                    <Text>Contato</Text>
                 </DivColumn>
                 <DivColumn>
                     <TitleColumn marginLeft="35">ATENDIMENTO</TitleColumn>
@@ -55,7 +55,7 @@ export default function Footer() {
                     </DivTextWithIcon>
                 </DivColumn>
                 <DivColumn>
-                    <TitleColumn marginLeft="35">Redes Sociais</TitleColumn>
+                    <TitleColumn marginLeft="35">REDES SOCIAIS</TitleColumn>
                     <DivTextWithIcon>
                         <IconColumn src="./facebook.png" />
                         <TextColumn>Facebook</TextColumn>

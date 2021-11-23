@@ -23,11 +23,12 @@ export const HeaderCart = styled.div`
     padding: 20px 30px 0px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 `;
 
 export const HeaderCartButton = styled.button`
     width: 150px;
-    padding: 0px 20px 0px 20px;
+    padding: 5px 20px 5px 20px;
     margin: 10px 0px 20px 0px;
     border-radius: 20px;
     cursor: pointer;
@@ -46,6 +47,10 @@ export const ItemImageText = styled.div`
     justify-content: center;
     flex-direction: row;
     align-items: center;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const Item = styled.div`
@@ -57,6 +62,10 @@ export const Item = styled.div`
     align-items: center;
 
     border-top: 3px solid #2F7420;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const ItemImage = styled.img`
@@ -69,6 +78,11 @@ export const ItemDivText = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @media(max-width: 600px) {
+        margin-left: 0px;
+        align-items: center;
+    }
 `;
 
 export const ItemTitle = styled.p`
@@ -129,6 +143,10 @@ export const DivDetails = styled.div`
 
     border-top: 3px solid #2F7420;
     border-bottom: 3px solid #2F7420;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const DeliveryData = styled.div`
@@ -141,11 +159,25 @@ export const DivDelivery = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
+    @media(max-width: 600px) {
+        width: 100%;
+        min-height: 125px;
+        margin: 10px 0px 30px 0px;
+    }
 `;
 
 export const DeliveryDetails = styled.img`
     width: 400px;
     padding-top: 10px;
+
+    @media(max-width: 800px) {
+        width: 95%;
+    }
+
+    @media(max-width: 600px) {
+        width: 100%;
+    }
 `;
 
 export const DeliveryDescription = styled.p`
@@ -186,6 +218,10 @@ export const CartButton = styled.button`
     
     background-color: #2F7420;
     color: #ffffff;
+
+    @media(max-width: 600px) {
+        width: 40vw;
+    }
 `;
 
 export const TextValue = styled.p`

@@ -8,6 +8,10 @@ export const Container = styled.div`
     justify-content: space-between;
 
     background-color: #fffbf4;
+
+    @media(max-width: 800px) {
+        align-items: center;
+    }
 `;
 
 export const Banner = styled.img`
@@ -26,11 +30,20 @@ export const ContainerCheckout = styled.div`
     align-items: flex-start;
 
     border-bottom: 3px solid #2F7420;
+
+    @media(max-width: 800px) {
+        flex-direction: column;
+        margin: 0px;
+    }
 `
 
 export const ContainerCard = styled.div`
    width: 33vw;
    padding: 10px;
+
+   @media(max-width: 800px) {
+        width: 90vw;
+    }
 `
 
 export const CheckoutCard = styled.div`
@@ -49,7 +62,6 @@ export const CardHeader = styled.div`
 `
 
 export const CardHeaderTitle = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -113,10 +125,14 @@ export const EditTextCard = styled.p`
     font-size: 14px;
     text-decoration: underline;
     text-align: right;
-    min-width: 200px;
+    min-width: 150px;
     font-weight: 200;
     color: #FF6B00;
     cursor: pointer;
+
+    @media(max-width: 600px) {
+        min-width: 0px;
+    }
 `
 
 export const CardDescription = styled.div`
@@ -176,6 +192,7 @@ export const ProductImage = styled.img`
 `
 
 export const ProductDetails = styled.div`
+        margin-left: 10px;
    
 `
 

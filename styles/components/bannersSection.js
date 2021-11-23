@@ -12,10 +12,14 @@ export const Cards = styled.div`
     padding: 20px 0px 20px 0px;
 
     display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
 
     border-bottom: 5px solid #2F7420;
+
+    @media(max-width: 800px) {
+        flex-wrap: wrap;
+    }
 `;
 
 export const Card = styled.div`
@@ -25,6 +29,10 @@ export const Card = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 800px) {
+        width: 50%;
+    }
 `;
 
 export const CardImage = styled.img`

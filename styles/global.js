@@ -35,4 +35,23 @@ export default createGlobalStyle`
       width: 30px;
       height: 30px;
     }
+    .menu {
+        height: 110vh;
+        padding: 10px 0px 0px 0px;
+        z-index: 10;
+
+        background-color: #ffffff;
+    }
+    .menu-item {
+        padding: 24px 0px 10px 10px;
+        font-size: 14px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        color: #000000;
+        background-color: #ffffff;
+        border-bottom: 1px solid gray;
+    }
 `

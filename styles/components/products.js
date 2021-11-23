@@ -8,6 +8,10 @@ export const Container = styled.div`
     flex-wrap: nowrap;
     z-index: 0;
     outline: none;
+
+    @media(max-width: 800px) {
+        flex-wrap: wrap;
+    }
 `;
 
 
@@ -18,15 +22,24 @@ export const ProductCard = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media(max-width: 800px) {
+        width: 50%;
+    }
 `;
 
 export const ProductImage = styled.img`
     margin-left: auto;
     margin-right: auto;
     width: 180px;
+
+    @media(max-width: 600px) {
+        width: 150px;
+    }
 `;
 
 export const ProductTitle = styled.p`
+    height: 50px;
     font-style: 14px;
     margin-top: 10px;
     text-align: center;

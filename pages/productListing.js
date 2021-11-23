@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import { useMainContext } from '../services/context'
 
@@ -22,11 +22,13 @@ import {
   FilterContainer,
   ContainerPagination,
   ButtonPagination,
+  ButtonFilter
 } from '../styles/productListing'
 
 export default function ProductListing() {
 
   const { search, type } = useMainContext();
+  const [filter, setFilter] = useState(false)
 
   return (
     <Container>
@@ -39,10 +41,13 @@ export default function ProductListing() {
         <FilterOrder>
           <option label="Relevância" />
         </FilterOrder>
+        <ButtonFilter onClick={() => setFilter(!filter)}>
+          Filtrar
+        </ButtonFilter>
       </ContainerOrder>
       <ProductsContent>
         <FilterContainer>
-          <Filter />
+          <Filter show={filter} />
         </FilterContainer>
         <ProductsContainer>
           <ProductsGrid />

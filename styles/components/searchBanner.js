@@ -21,6 +21,12 @@ export const Title = styled.p`
     font-weight: bolder;
 
     color: #ffffff;
+    
+    @media(max-width: 800px) {
+        text-align: center;
+        font-size: 24px;
+        margin-top: -70px;
+    }
 `;
 
 export const InputDiv = styled.div`
@@ -32,15 +38,16 @@ export const InputDiv = styled.div`
     width: 350px;
     position: absolute;
     margin-top: 50px;
-    padding: 10px;
+    padding: 2px 15px 2px 15px;
 
     background-color: #ffffff;
 `;
 
 export const Input = styled.input`
     width: 80%;
+    padding: 0px;
     outline: none;
-    font-size: 18px;
+    font-size: 14px;
     border: 0px;
 `;
 

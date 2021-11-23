@@ -7,12 +7,21 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    @media(max-width: 800px) {
+        padding: 10px;
+    }
+
 `;
 
 export const CardLeft = styled.div`
     width: 50vw;
     padding: 0px 5px 0px 5px;
     cursor: pointer;
+
+    @media(max-width: 800px) {
+        width: 47vw;
+    }
 `;
 
 export const CardRight = styled.div`
@@ -22,6 +31,10 @@ export const CardRight = styled.div`
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+
+    @media(max-width: 800px) {
+        width: 44vw;
+    }
 `;
 
 export const CardLeftImage = styled.img`

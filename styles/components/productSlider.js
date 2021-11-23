@@ -20,6 +20,10 @@ export const ProductImage = styled.img`
     margin-left: auto;
     margin-right: auto;
     width: 180px;
+
+    @media(max-width: 600px) {
+        width: 150px;
+    }
 `;
 
 export const ProductTitle = styled.p`

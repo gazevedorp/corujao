@@ -16,12 +16,30 @@ export const DivColumns = styled.div`
     padding: 20px 0px 20px 30px;
     flex-direction: row;
     justify-content: space-between;
+
+    @media(max-width: 800px) {
+        flex-wrap: wrap;
+    }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const DivColumn = styled.div`
     width: 25%;
     display: flex;
     flex-direction: column;
+
+    @media(max-width: 800px) {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    @media(max-width: 600px) {
+        width: 90%;
+    }
+
 `;
 
 export const TitleColumn = styled.p`
@@ -29,6 +47,10 @@ export const TitleColumn = styled.p`
     margin-left: ${props => props.marginLeft}px;
 
     color: #FF862D;
+
+    @media(max-width: 800px) {
+        margin-left: 0px;
+    }
 `;
 
 export const Text = styled.p`
@@ -68,6 +90,10 @@ export const IconColumn = styled.img`
 export const ImageColumn = styled.img`
     width: 150px;
     margin-top: 15px;
+
+    @media(max-width: 600px) {
+        margin-top: 30px;
+    }
 `;
 
 export const DivCards = styled.div`
@@ -76,6 +102,10 @@ export const DivCards = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media(max-width: 800px) {
+        display: none;
+    }
 `;
 
 export const ImageCard = styled.img`
@@ -91,13 +121,26 @@ export const DivTerms = styled.div`
     justify-content: space-between;
 
     color: #FF862D;
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+    }
 `;
 
 export const TextTerms = styled.p`
     width: 600px;
     font-size: 14px;
+
+    @media(max-width: 600px) {
+        width: 90%;
+        text-align: center;
+    }
 `;
 
 export const ImageTerms = styled.img`
     width: 125px;
+
+    @media(max-width: 600px) {
+        margin-top: 20px;
+    }
 `;

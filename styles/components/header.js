@@ -12,9 +12,22 @@ export const Container = styled.div`
     background-color: #FF862D;
 `;
 
-export const Logo = styled.img`
+export const LogoWeb = styled.img`
     width: 300px;
     cursor: pointer;
+
+    @media(max-width: 800px) {
+        display: none;
+    }
+`;
+
+export const LogoMobile = styled.img`
+    width: 50px;
+    cursor: pointer;
+
+    @media(min-width: 800px) {
+        display: none;
+    }
 `;
 
 export const DivOptions = styled.div`
@@ -36,6 +49,11 @@ export const CategoriesSelect = styled.select`
 
     option{
         color: #000000;
+        font-size: 14px;
+    }
+
+    @media(max-width: 800px) {
+        display: none;
     }
 `;
 
@@ -44,6 +62,10 @@ export const CartImage = styled.img`
 
     width: 30px;
     margin: 0px 50px 0px 50px;
+
+    @media(max-width: 800px) {
+        margin: 0px 20px 0px 50px;
+    }
 `;
 
 export const DivLogin = styled.div`
@@ -64,4 +86,8 @@ export const DivLoginTitle = styled.p`
     font-size: 16px;
     font-weight: 300;
     color: #ffffff;
+
+    @media(max-width: 800px) {
+        display: none;
+    }
 `;

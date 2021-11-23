@@ -17,6 +17,18 @@ export const Cards = styled.div`
     justify-content: space-between;
 
     border-bottom: 5px solid #2F7420;
+
+    @media(max-width: 800px) {
+        flex-wrap: wrap;
+    }
+
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 10px 30px 10px;
+    }
 `;
 
 export const CardContainer = styled.div`
@@ -27,6 +39,16 @@ export const CardContainer = styled.div`
     align-items: center;
 
     box-shadow: 2px 2px 5px 0px grey;
+
+    @media(max-width: 800px) {
+        width: 45%;
+        margin: 10px 10px 10px 10px;
+    }
+
+    @media(max-width: 600px) {
+        width: 90vw;
+        margin: 0px 0px 20px 0px;
+    }
 `;
 
 export const Card = styled.div`
@@ -59,4 +81,8 @@ export const CardStars = styled.img`
 export const CardFooterContainer = styled.img`
     width: 220px;
     padding: 5px 5px 10px 5px;
+
+    @media(max-width: 600px) {
+        width: 100%;
+    }
 `;

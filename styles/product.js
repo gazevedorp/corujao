@@ -76,11 +76,23 @@ export const ContainerDetails = styled.div`
    display: flex;
    flex-direction: row;
    justify-content: center;
+
+   @media(max-width: 600px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 600px) {
+        padding: 0px;
+    }
 `;
 
 export const ContainerImages = styled.div`
    display: flex;
    flex-direction: row;
+
+   @media(max-width: 600px) {
+        padding-left: 15px;
+    }
 `;
 
 export const Miniatures = styled.div`
@@ -97,6 +109,10 @@ export const Image = styled.img`
     width: auto;
     height: 350px;
    padding: 5px;
+
+   @media(max-width: 800px) {
+        height: 250px;
+    }
 `;
 
 export const Details = styled.div`
@@ -129,7 +145,11 @@ export const Price = styled.p`
 `;
 
 export const ImagePayment = styled.img`
-margin-top: 15px;
+    margin-top: 15px;
+
+    @media(max-width: 600px) {
+        margin: 20px 0px 20px 0px;
+    }
 `;
 
 export const DivHor = styled.div`
